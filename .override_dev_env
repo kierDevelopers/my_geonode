@@ -2,8 +2,8 @@ export DEBUG=True
 
 export SECRET_KEY="myv-y4#7j-d*p-__@j#*3z@!y24fz8%^z2v6atuy4bo9vqr1_a"
 
-export SITEURL=http://localhost:8000/
-export ALLOWED_HOSTS="['localhost',]"
+export SITEURL=http://10.231.8.115:8000/
+export ALLOWED_HOSTS="['10.231.8.115', 'localhost']"
 
 export GEONODE_INSTANCE_NAME=geonode
 export DJANGO_SETTINGS_MODULE=my_geonode.settings
@@ -12,13 +12,13 @@ export GEONODE_DATABASE_PASSWORD=geonode
 export GEONODE_GEODATABASE=my_geonode_data
 export GEONODE_GEODATABASE_PASSWORD=geonode
 
-export DATABASE_URL=postgis://my_geonode:geonode@localhost:5432/my_geonode
-export GEODATABASE_URL=postgis://my_geonode_data:geonode@localhost:5432/my_geonode_data
+export DATABASE_URL=postgis://my_geonode:geonode@10.231.8.115:5432/my_geonode
+export GEODATABASE_URL=postgis://my_geonode_data:geonode@10.231.8.115:5432/my_geonode_data
 export DEFAULT_BACKEND_DATASTORE=datastore
 
-export GEOSERVER_WEB_UI_LOCATION=http://localhost:8080/geoserver/
-export GEOSERVER_PUBLIC_LOCATION=http://localhost:8080/geoserver/
-export GEOSERVER_LOCATION=http://localhost:8080/geoserver/
+export GEOSERVER_WEB_UI_LOCATION=http://10.231.8.115:8080/geoserver/
+export GEOSERVER_PUBLIC_LOCATION=http://10.231.8.115:8080/geoserver/
+export GEOSERVER_LOCATION=http://10.231.8.115:8080/geoserver/
 export GEOSERVER_ADMIN_USER=admin
 export GEOSERVER_ADMIN_PASSWORD=geoserver
 
@@ -33,11 +33,11 @@ export TIME_ENABLED=True
 export MOSAIC_ENABLED=False
 
 export ADMIN_PASSWORD=admin
-export ADMIN_EMAIL=admin@localhost
+export ADMIN_EMAIL=admin@10.231.8.115
 
 export EMAIL_ENABLE=False
 export DJANGO_EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
-export DJANGO_EMAIL_HOST=localhost
+export DJANGO_EMAIL_HOST=10.231.8.115
 export DJANGO_EMAIL_PORT=25
 export DJANGO_EMAIL_HOST_USER=
 export DJANGO_EMAIL_HOST_PASSWORD=

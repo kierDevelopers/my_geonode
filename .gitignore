@@ -1,3 +1,4 @@
+# This will ignore all the files and folders in this env and won't be pushed up
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -63,3 +64,4 @@ local_settings.py
 
 .idea/
 .vscode/
+geoserver
