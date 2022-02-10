@@ -63,3 +63,7 @@ local_settings.py
 
 .idea/
 .vscode/
+geoserver/
+.override_dev_env
+manage_dev.sh
+paver_dev.sh
