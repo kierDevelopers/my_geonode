@@ -1,5 +1,5 @@
 body {
-    background: #e42313;
+    background: #008f9d;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     padding-top: 20px;
@@ -87,7 +87,11 @@ body {
 footer {
     color: black;
     padding: 1.5em;
-    background-color: #008f9d;
+    background-color: #e42313;
+    
+    bottom: 0;
+    width: 100%;
+    
 }
 
 footer a {
@@ -95,5 +99,21 @@ footer a {
 }
 
 footer a:hover {
-    color: #e4241396;
+    color: #008f9d;
+}
+
+.modal-header {
+    background-color: #e42313;
+}
+
+.modal-footer {
+    background-color: #008f9d;
+}
+
+.btn {
+    background-color: #008f9d;
+}
+
+.btn:hover {
+    background-color: #e42313;
 }

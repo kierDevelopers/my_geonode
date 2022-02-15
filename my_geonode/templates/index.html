@@ -86,7 +86,7 @@
   {% endblock hero %}
 
   {% block mainbody %}
-
+      {% if user.is_superuser %}
       {% block bigsearch %}
       {% if block.super %}
       {{ block.super }}
@@ -115,7 +115,8 @@
       </div>
       {% endif %}
       {% endblock bigsearch %}
-
+      {% endif %}
+    {% if user.is_superuser %}
 	  {% block showcase %}
       <section id="showcase">
         <div class="row">
@@ -165,7 +166,8 @@
         </div>
       </section>
 	  {% endblock showcase %}
-
+    {% endif %}
+    {% if user.is_superuser %}
 	  {% block datasets %}
     <section id="datasets">
       {% get_visibile_resources request.user %}
@@ -185,7 +187,7 @@
       </div>
     </section>
     {% endblock datasets %}
-
+    {% endif %}
       {% block partners %}
         {% if custom_theme.partners.all %}
         <section id="partners">
